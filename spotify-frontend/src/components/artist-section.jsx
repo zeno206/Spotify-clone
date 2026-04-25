@@ -29,7 +29,7 @@ function Artistsection() {
 
   const getmusic = async () => {
     await axios
-      .get("https://encrypted-tbn0.gstatic.com/api/music/getmusic")
+      .get("https://spotify-clone-1j8u.onrender.com/api/music/getmusic")
       .then((res) => {
         console.log(res.data);
         setCmusic(res.data.music);
@@ -53,7 +53,7 @@ function Artistsection() {
 
     axios
       .post(
-        "https://encrypted-tbn0.gstatic.com/api/music/uploadmusic",
+        "https://spotify-clone-1j8u.onrender.com/api/music/uploadmusic",
         formdata,
         {
           headers: {
