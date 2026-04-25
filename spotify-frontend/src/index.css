@@ -7,9 +7,9 @@
 }
 .main-header {
   width: 100%;
-  padding: 24px 20px 70px 20px;
+  padding: 24px 20px 135px;
   position: relative;
-  background-color: black;
+  background-color: #000;
 }
 
 form {
@@ -214,12 +214,12 @@ label {
   border-radius: 24px;
   color: #fff;
   font-family: Poppins, sans-serif;
-  width: 100%;
+  width: 88%;
   font-size: 12px;
   font-weight: 500;
   border: 1px solid #585555;
   margin-top: 5px;
-  margin-left: 0px;
+  margin-left: 19px;
   box-sizing: border-box;
 }
 
