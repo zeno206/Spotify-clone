@@ -6,7 +6,7 @@ function TopBar() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/ai/topbar")
+      .get("https://spotify-clone-1j8u.onrender.com/api/ai/topbar")
       .then((res) => {
         setplaylist(res.data);
       })
