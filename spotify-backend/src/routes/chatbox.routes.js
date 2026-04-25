@@ -4,7 +4,7 @@ const router = express.Router();
 require("dotenv").config();
 
 const client = new OpenAI({
-  apiKey: process.env.Api_key,
+  apiKey: process.env.GROQ_API_KEY,
   baseURL: "https://api.groq.com/openai/v1",
 });
 router.post("/chatbox", async (req, res) => {
