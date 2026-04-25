@@ -987,6 +987,7 @@ audio {
   color: black;
   background-color: white;
   font-weight: 600;
+  width: 27%;
 }
 
 .f-btn2 {
@@ -995,6 +996,7 @@ audio {
   color: white;
   font-weight: 600;
   background-color: #ffffff3b;
+  width: 27%;
 }
 .ri-search-2-line {
   color: #ffffffa8;
