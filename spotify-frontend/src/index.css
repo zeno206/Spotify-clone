@@ -1271,6 +1271,8 @@ audio {
 
 .barr-1a {
   padding: 2px 2px 13px 2px;
+  display: flex;
+  width: 18%;
 }
 
 .row-2 {
