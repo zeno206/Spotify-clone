@@ -86,7 +86,7 @@ function Artistsection() {
             </h4>
           </div>
           <div className="apart-2">
-            <button className="f-btn">Explore premium</button>
+            <button className="f-btna">Explore premium</button>
             <i class="ri-notification-4-line"></i>
             <img
               className="pp-img"

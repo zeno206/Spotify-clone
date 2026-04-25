@@ -989,6 +989,14 @@ audio {
   font-weight: 600;
   width: 27%;
 }
+.f-btna {
+  margin-top: 0px;
+  padding: 0px 15px 0px 15px;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+  width: 48%;
+}
 
 .f-btn2 {
   margin-top: 0px;
@@ -1395,16 +1403,16 @@ audio {
 
 .box-3 {
   position: absolute;
-  bottom: 7px;
+  bottom: -56px;
   background-color: black;
-  height: 71px;
+  height: 69px;
   width: 100%;
 }
 .box-31 {
   position: absolute;
-  bottom: 2px;
+  bottom: -56px;
   background-color: black;
-  height: 65px;
+  height: 69px;
   width: 100%;
 }
 
