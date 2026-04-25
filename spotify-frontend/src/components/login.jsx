@@ -27,7 +27,7 @@ function Login() {
     };
 
     axios
-      .post("http://localhost:8000/api/auth/login", data)
+      .post("https://spotify-clone-1j8u.onrender.com", data)
       .then((res) => {
         localStorage.setItem("token", res.data.token);
         setname(res.data.username);

@@ -41,7 +41,7 @@ function Homebar() {
 
   const getmusic = async () => {
     await axios
-      .get("http://localhost:8000/api/Mainmusic")
+      .get("https://spotify-clone-1j8u.onrender.com/api/Mainmusic")
       .then((res) => {
         setmymusic(res.data.songs);
       })
@@ -72,7 +72,7 @@ function Homebar() {
     }
 
     axios
-      .post("http://localhost:8000/api/ai/Smarts", { search })
+      .post("https://spotify-clone-1j8u.onrender.com/api/ai/Smarts", { search })
       .then((res) => {
         setDsearch(res.data);
         setshow8(true);
@@ -97,7 +97,7 @@ function Homebar() {
     e.target.reset();
 
     axios
-      .post("http://localhost:8000/api/chatbox", { prompt })
+      .post("https://spotify-clone-1j8u.onrender.com/api/chatbox", { prompt })
       .then((res) => {
         setshow6(true);
         const data = res.data.reply;

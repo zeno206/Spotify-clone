@@ -6,7 +6,7 @@ function Podcast() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/ai/Podcast")
+      .get("https://spotify-clone-1j8u.onrender.com/api/ai/Podcast")
       .then((res) => {
         setPodcastr(res.data);
       })

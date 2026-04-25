@@ -22,7 +22,7 @@ function Registerform() {
     };
 
     axios
-      .post("http://localhost:8000/api/auth/register", data)
+      .post("https://spotify-clone-1j8u.onrender.com", data)
       .then((res) => {
         setshow(true);
         localStorage.setItem("token", res.data.token);
