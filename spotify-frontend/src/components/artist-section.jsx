@@ -29,7 +29,7 @@ function Artistsection() {
 
   const getmusic = async () => {
     await axios
-      .get("http://localhost:8000/api/music/getmusic")
+      .get("https://encrypted-tbn0.gstatic.com/api/music/getmusic")
       .then((res) => {
         console.log(res.data);
         setCmusic(res.data.music);
@@ -52,11 +52,15 @@ function Artistsection() {
     setpending(true);
 
     axios
-      .post("http://localhost:8000/api/music/uploadmusic", formdata, {
-        headers: {
-          Authorization: `Bearer ${token}`,
+      .post(
+        "https://encrypted-tbn0.gstatic.com/api/music/uploadmusic",
+        formdata,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         },
-      })
+      )
       .then((res) => {
         console.log(res.data);
         setpending(false);
