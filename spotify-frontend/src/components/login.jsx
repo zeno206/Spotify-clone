@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import image from "../assets/wrong-image.png";
+import loadinggrenn from "../assets/loading-green-loading.gif";
 import checkImg from "../assets/green-double-circle-check-mark_78370-1749.avif";
 import axios from "axios";
 
@@ -11,6 +12,8 @@ function Login() {
   const [show, setshow] = useState(false);
   const [show2, setshow2] = useState(false);
   const [show3, setshow3] = useState(false);
+  const [showbtn1, setshowbtn1] = useState(true);
+  const [showbtn2, setshowbtn2] = useState(false);
   const [name, setname] = useState("");
 
   const cutone = () => {
@@ -19,6 +22,8 @@ function Login() {
   const Navigate = useNavigate();
   const submithandler1 = async (e) => {
     e.preventDefault();
+    setshowbtn1(false);
+    setshowbtn2(true);
 
     const formdata = new FormData(e.target);
     const data = {
@@ -72,7 +77,12 @@ function Login() {
                 <h3 className="remh3">forgotten password?</h3>
               </div>
             </div>
-            <button type="submit">Login</button>
+            {showbtn1 && <button type="submit">Login</button>}
+            {showbtn2 && (
+              <button className="btnnn-2">
+                <img className="grenload" src={loadinggrenn} alt="" />
+              </button>
+            )}
           </form>
 
           <h4 className="de">or continue with</h4>
