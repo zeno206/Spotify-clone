@@ -1971,11 +1971,26 @@ h5 {
   .centerbar {
     display: flex;
     -moz-column-gap: 33px;
-    column-gap: 54px;
+    column-gap: 34px;
     margin-bottom: 10px;
     margin-top: 14px;
   }
 
+  .btnnn-2 {
+    margin-top: 0px;
+    position: absolute;
+    left: 0px;
+    padding: 9px;
+    width: 83%;
+    margin-left: 26px;
+    top: 395px;
+  }
+
+  .grenload {
+    width: 8%;
+    margin-left: 122px;
+    padding: 0px;
+  }
   button {
     background-color: #1eb11e;
     color: #000;
